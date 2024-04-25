@@ -20,9 +20,25 @@ int main()
 		*(stdArr + i) = stdScore;
 	}
 
+	cout << "\n己利 乞闭:\n( ";
+
+	for (int j = 0; j < stdNum; j++)
+	{
+		cout << stdArr[j];
+
+		if (j != stdNum - 1)
+		{
+			cout << " + ";
+		}
+		else 
+		{
+			cout << " ) / " << stdNum << " = ";
+		}
+	}
+
 	delete[] stdArr; //皋葛府 秦力
 
-	cout << "己利 乞闭: " << scoreSum / stdNum << endl;
+	cout << scoreSum / stdNum << endl;
 
 	return 0;
 }
