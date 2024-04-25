@@ -13,7 +13,7 @@ int main()
 
 	for (int i = 0; i < stdNum; i++)
 	{
-		cout << i << "번 학생의 성적을 입력하세요: ";
+		cout << i+1 << "번 학생의 성적을 입력하세요: ";
 		cin >> stdScore;
 
 		scoreSum += stdScore;
