@@ -16,9 +16,12 @@ int main()
 	int numCols = sizeof(score[0]) / sizeof(score[0][0]);
 	int age;
 
+	cout << "나이를 입력받아 해당 나이를 가진 학생의 이름과 수학 점수를 확인하는 프로그램"
+		<< "(-1 입력시 종료)" << endl;
+
 	while (1)
 	{
-		cout << endl << "나이를 입력해주세요 (-1 입력시 종료)" << endl;
+		cout << endl << "나이를 입력해주세요" << endl;
 		cin >> age;
 
 		// type
