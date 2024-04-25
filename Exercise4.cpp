@@ -16,8 +16,6 @@ int main()
 		cout << endl << i+1 << "번 학생의 성적을 입력하세요: ";
 		cin >> stdScore;
 
-		scoreSum += stdScore;
-
 		*(stdArr + i) = stdScore;
 	}
 
@@ -25,6 +23,8 @@ int main()
 
 	for (int j = 0; j < stdNum; j++)
 	{
+		scoreSum += stdArr[j];
+
 		cout << stdArr[j];
 
 		if (j != stdNum - 1)
