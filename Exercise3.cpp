@@ -13,13 +13,13 @@ void reverse(int* array)
 
 int main()
 {
-	int myArray[ARRAY_SIZE] = { 1, 2, 3, 4, 6 };
+	int myArray[ARRAY_SIZE] = { 1, 2, 3, 4, 5 };
 
 	reverse(&myArray[0]);
 
-	for (int k = 0; k < ARRAY_SIZE; k++)
+	for (int j = 0; j < ARRAY_SIZE; j++)
 	{
-		cout << myArray[k] << endl;
+		cout << myArray[j] << endl;
 	}
 
 	return 0;
