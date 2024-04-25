@@ -9,7 +9,7 @@ int main()
 	cout << "성적을 입력할 학생은 몇 명? " << endl;
 	cin >> stdNum;
 
-	int* stdArr = new int[stdNum];
+	int* stdArr = new int[stdNum]; //동적 배열 생성
 
 	for (int i = 0; i < stdNum; i++)
 	{
@@ -19,6 +19,8 @@ int main()
 		scoreSum += stdScore;
 		*(stdArr + i) = stdScore;
 	}
+
+	delete[] stdArr; //메모리 해제
 
 	cout << "성적 평균: " << scoreSum / stdNum << endl;
 
