@@ -14,10 +14,10 @@ int main()
 
 	int numRows = sizeof(score) / sizeof(score[0]);
 	int numCols = sizeof(score[0]) / sizeof(score[0][0]);
-	int age;
+	string age;
 
 	cout << "** 나이를 입력받아 해당 나이를 가진 학생의 이름과 수학 점수를 확인하는 프로그램 **" << endl
-		<< "(-1 입력시 종료)" << endl << endl;
+		<< "(exit 입력시 종료)" << endl << endl;
 
 	while (1)
 	{
@@ -32,7 +32,7 @@ int main()
 		int type = 0;
 
 
-		if (age == -1)
+		if (age == "exit")
 		{
 			type = 0;
 		}
@@ -40,7 +40,7 @@ int main()
 		{
 			for (int i = 1; i < numRows; i++)
 			{
-				if (age == stoi(score[i][1]))
+				if (age == score[i][1])
 				{
 					type = 1;
 					break;
@@ -61,7 +61,7 @@ int main()
 		case 1:
 			for (int j = 1; j < numRows; j++)
 			{
-				if (age == stoi(score[j][1]))
+				if (age == score[j][1])
 				{
 					cout << "이름: " << score[j][0] << ", 수학 점수: " << score[j][3] << endl;
 				}
