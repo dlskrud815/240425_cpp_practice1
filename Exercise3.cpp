@@ -19,7 +19,7 @@ int main()
 
 	for (int j = 0; j < ARRAY_SIZE; j++)
 	{
-		cout << myArray[j] << endl;
+		cout << myArray[j] << " ";
 	}
 
 	return 0;
