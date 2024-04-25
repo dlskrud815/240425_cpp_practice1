@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#define ARRAY_SIZE 5
+#define ARRAY_SIZE 10
 
 void reverse(int* array)
 {
@@ -13,7 +13,7 @@ void reverse(int* array)
 
 int main()
 {
-	int myArray[ARRAY_SIZE] = { 1, 2, 3, 4, 5 };
+	int myArray[ARRAY_SIZE] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 	reverse(&myArray[0]);
 
